@@ -1,60 +1,72 @@
- 
-Course Enrollment and Grade Management System
-A robust Java-based application designed to streamline the administration of university courses, student enrollments, and academic performance tracking. This project demonstrates core Object-Oriented Programming (OOP) concepts such as encapsulation, static memory management, and modular software design.
+# Course Enrollment and Grade Management System
 
-🚀 Features
-Course Management: Add new courses to the university catalog with ease.
+A robust, enterprise-standard **Java application** designed to streamline university administrative workflows, course tracking, and student performance metrics. This system showcases advanced **Object-Oriented Programming (OOP)** implementation.
 
-Student Enrollment: Seamlessly enroll students into specific courses.
+---
 
-Grade Administration: Assign and update grades for students.
+## 🚀 Key Features
 
-Academic Analytics:
+* **Dynamic Course Creation:** Add custom courses to the catalog with unique codes and caps.
+* **Interactive Enrollment:** Seamless, menu-driven registration of new learners.
+* **Grade Administration:** Real-time assignment and validation of academic scores.
+* **Overall Performance Analytics:** Compiles and averages performance records per student.
+* **Global Institutional Metrics:** Tracks university-wide statistics using shared static fields.
+* **Input Error Resilience:** Filters and rejects malformed inputs to prevent runtime crashes.
 
-Calculate overall course grades.
+---
 
-Track and display the total number of students enrolled across the system using static variables.
+## 🛠️ Technical Architecture
 
-Data Integrity: Utilizes encapsulation to ensure data is handled securely and logic is centralized.
+* **Language:** **Java (JDK 11+)**
+* **Encapsulation:** Protects data integrity via private instance variables and public getters/setters.
+* **Static Memory Management:** Implements static methods and variables for cross-instance analytics.
+* **Interface Separation:** Decouples user-facing CLI presentation logic from core backend models.
+* **Environment:** Developed inside **GitHub Codespaces** using Git version control.
 
-🛠️ Technologies & Tools
-Language: Java
+---
 
-Concepts: Object-Oriented Programming (Encapsulation, Static Methods/Variables, Classes & Objects)
+## 📂 Project Structure
 
-Environment: GitHub Codespaces
+```text
+course-enrollment-grade-management-system/
+├── src/
+│   └── coursemanagement/
+│       ├── AdministratorInterface.java  # Main execution entry point & CLI loop
+│       ├── CourseManagement.java        # Core business logic & database management
+│       ├── Course.java                  # Course data model & static enrollment metrics
+│       └── Student.java                 # Student data model & performance tracking
+├── .gitignore                           # Prevents tracking compiled bytecode (.class)
+└── README.md                            # Comprehensive system documentation
+```
 
-Version Control: Git & GitHub
+---
 
-📂 Project Structure
-Plaintext
-src/coursemanagement
-├── AdministratorInterface.java  # Main entry point; handles CLI and user input
-├── CourseManagement.java       # Core business logic for enrollment and grades
-├── Course.java                 # Course entity with attributes and methods
-└── Student.java                # Student entity representing individual learners
-Note: The project is organized into a modular package structure to ensure maintainability and scalability.
+## ⚙️ Installation & Usage
 
-⚙️ Installation & Usage
-Clone the repository:
-
-Bash
+### 1. Clone the repository
+```bash
 git clone https://github.com/C7-mia/course-enrollment-grade-management-system.git
-Navigate to the source directory:
+cd course-enrollment-grade-management-system
+```
 
-Bash
-cd course-enrollment-grade-management-system/src
-Compile the program:
+### 2. Compile the source code
+```bash
+javac src/coursemanagement/*.java
+```
 
-Bash
-javac coursemanagement/*.java
-Run the application:
+### 3. Launch the application interface
+```bash
+java -cp src coursemanagement.AdministratorInterface
+```
 
-Bash
-java coursemanagement.AdministratorInterface
-🧑‍💻 Author
-Akena  Nicholas BSc Computer Science Student University of the People
+---
 
-Course: Programming 1 (Java)
+## 🧑‍💻 Academic Profile
 
-This project was developed as part of the academic curriculum to demonstrate proficiency in Java and software design principles.
+* **Author Name:** **Akena Nicholas**
+* **Degree Program:** **BSc Computer Science**
+* **Institution:** **University of the People**
+* **Course Assignment:** **Programming 1 (Java)**
+
+---
+*Developed strictly in accordance with University academic software development guidelines.*
